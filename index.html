@@ -188,6 +188,44 @@
             </a>
           </div>
         </div>
+        <form class="contactform">
+          <div class="formrow">
+            <div class="formgroup">
+              <label for="name">YOUR NAME</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="formgroup">
+              <label for="email">YOUR EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+          </div>
+          <div class="formgroup">
+            <label for="message">YOUR MESSAGE</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell me about your idea..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="contactbutton">
+            SEND MESSAGE
+            <span>→</span>
+          </button>
+        </form>
       </section>
     </main>
 

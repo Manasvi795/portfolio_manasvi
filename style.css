@@ -132,9 +132,71 @@ a {
   margin: 0 auto;
 }
 .hero-label {
+  position: relative;
+  height: 20px;
+  margin-bottom: 25px;
   color: var(--accent);
   font-size: 0.75rem;
-  margin-bottom: 25px;
+  overflow: hidden;
+}
+.hero-label span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.hero-label span:first-child {
+  animation-name: developer;
+}
+.hero-label span:last-child {
+  animation-name: frontend;
+}
+@keyframes developer {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes frontend {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
 .hero h1 {
   font-family: "Playfair Display", serif;
